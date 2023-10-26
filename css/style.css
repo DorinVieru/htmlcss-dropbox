@@ -44,37 +44,41 @@ li{
 button{
     background-color: rgb(0, 97, 255);
     color: white;
-    padding: 5px 13px 5px 13px;
+    padding: 7px 15px 7px 15px;
     border: none;
 }
 
 /* MAIN */
-
+main{
+    padding-top: 90px;
+}
 
 /* CONTAINER JUMBOTRON */
 .container-jumbo{
     max-width: 100%;
+    background-color: rgb(180, 208, 231);
 }
 
 .row-jumbo {
     width: 100%;
     display: flex;
-    height: 80%;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 20px 0 0 0px;
+    padding: 30px 250px 0 250px;
 }
 
 .content-jumbo-100{
-    height: 100px;
-    background-color: yellow;
-    border: 1px solid black;
+    font-size: 30px;
+    font-weight: 900;
+    padding: 0 0 20px 0;
 }
 
 .content-jumbo-50{
-    height: 200px;
-    background-color: blue;
-    border: 1px solid black;
+    margin-top: 40px;
+}
+
+.jumbo-button{
+    margin: 20px 0 20px 0;
 }
 
 .col-100{
@@ -83,6 +87,18 @@ button{
 
 .col-50-jumbo{
     width: 50%;
+}
+
+.img-jumbo{
+    width: 550px;
+    position: relative;
+    top: 35px;
+}
+
+.fa-arrow-down{
+    font-size: 40px;
+    font-weight: 900;
+    margin-top: 40px;
 }
 
 /* CONTAINER CENTRALE */
@@ -97,7 +113,7 @@ button{
     height: 80%;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 20px 0 0 0px;
+    padding: 50px 0 0 0px;
     gap: 10px;
 }
 
