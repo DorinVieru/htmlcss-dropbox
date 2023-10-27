@@ -81,7 +81,7 @@ main{
 }
 
 .col-100{
-    width: 100%;
+    width: 96%;
 }
 
 .col-50-jumbo{
@@ -111,12 +111,12 @@ main{
     display: flex;
     height: 80%;
     flex-wrap: wrap;
-    padding: 20px 0 0 0px;
+    padding: 20px 0 80px 0px;
     gap: 0 50px;
 }
 
 h2{
-    font-size: 45px;
+    font-size: 40px;
     padding-bottom: 15px;
 }
 
@@ -234,7 +234,7 @@ span{
 /* DIV ENTERPRICE */
 .content-enterprise{
     border: 1px solid lightgray;
-    margin: 0 0 70px 0;
+    margin: 0 0 90px 0;
     display: flex;
 }
 
@@ -254,14 +254,47 @@ span{
 }
 
 /* DIV PARTNER */
-.col-50{
-    width: calc(50% - 50px);
+.col-60{
+    width: calc(50% - 40px);
 }
 
-.content-50{
-    height: 200px;
-    background-color: rgb(70, 184, 242);
-    border: 1px solid black;
+.col-40{
+    width: calc(50% - 60px);
+}
+
+.img-partner{
+    width: 650px;
+}
+
+.content-50-central{
+   padding: 70px 0 0 80px;
+}
+
+.p-partner-operation{
+    padding-top: 30px;
+}
+
+.button-partner{
+    margin-top: 40px;
+    background-color: white;
+    color: gray;
+    border: 2px solid gray;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* DIV OPERATION */
+
+.operation{
+    padding: 100px 0 50px 0;
+}
+
+.img-operation{
+    width: 250px;
+}
+
+.title-team{
+    padding-bottom: 45px;
 }
 
 /* CONTAINER LOGHI */
