@@ -17,15 +17,15 @@ body{
 .row-fluid {
     width: 100%;
     display: flex;
-    gap: 20px 20px;
     justify-content: space-between;
     align-items: center;
+    padding: 20px 0;
 }
 
 /* HEADER */
 header {
     background-color: white;
-    padding: 20px 0;
+    gap: 20px 20px;
     position: fixed;
     width: 100%;
     z-index: 1;
@@ -35,7 +35,7 @@ ul{
     list-style: none;
 }
 
-li{
+.li-header{
     display: inline-block;
     vertical-align: middle;
     padding: 10px;
@@ -64,13 +64,12 @@ main{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 30px 250px 0 250px;
+    padding: 10px 250px 0 250px;
 }
 
 .content-jumbo-100{
     font-size: 30px;
     font-weight: 900;
-    padding: 0 0 20px 0;
 }
 
 .content-jumbo-50{
@@ -90,9 +89,9 @@ main{
 }
 
 .img-jumbo{
-    width: 550px;
+    width: 620px;
     position: relative;
-    top: 35px;
+    top: 40px;
 }
 
 .fa-arrow-down{
@@ -111,36 +110,165 @@ main{
     width: 100%;
     display: flex;
     height: 80%;
-    justify-content: center;
     flex-wrap: wrap;
-    padding: 50px 0 0 0px;
-    gap: 10px;
+    padding: 80px 0 0 0px;
+    gap: 0 50px;
+}
+
+h2{
+    font-size: 45px;
+    padding-bottom: 15px;
+}
+
+.checkbox input {
+    height: 0;
+    width: 0;
+}
+
+.checkbox {
+    position: relative;
+    user-select: none;
+    padding: 0 40px 0 20px;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #c9c9c9;
+    border-radius: 50%;
+}
+
+.checkbox input:checked~.checkmark {
+    background-color: #2196F3;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    top: 22%;
+    left: 0;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background: white;
 }
 
 /* DIV PRICE */
 .col-33{
-    width: calc(100% / 3 - 10px);
+    width: calc(100% / 3 - 50px);
+    margin-top: 40px;
 }
 
 .content-full{
     height: 100px;
-    background-color: yellow;
 }
 
 .content-33{
-    height: 300px;
-    background-color: bisque;
+    border: 1px solid lightgray;
+    min-height: 1020px;
+}
+
+.content-33-title{
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid lightgray;
+}
+
+.content-33-central{
+    padding: 30px;
+}
+
+h3{
+    font-size: 25px;
+}
+
+h6{
+    font-size: 18px;
+    padding: 10px 0 10px 0;
+}
+
+.p-gray{
+    color: gray;
+    padding-bottom: 20px;
+}
+
+.list-price{
+    display: flex;
+    align-items: baseline;
+    padding: 10px 10px 10px 0;
+}
+
+span{
+    padding-left: 10px;
+}
+
+.button-prova-gratis{
+    padding: 10px 45px 10px 45px;
+    font-size: 17px;
+    margin: 25px 0 25px 0;
+}
+
+.button-contattaci{
+    padding: 10px 95px 10px 95px;
+    font-size: 17px;
+    margin: 25px 0 25px 0;
+}
+
+.small-hr {
+    color: rgb(237, 235, 235);
+    width: 60px;
+    margin: 40px 0 40px 0;
+}
+
+.fa-check{
+    color:rgb(0, 97, 255);
+    padding-top: 15px;
+    font-weight: 900;
 }
 
 /* DIV PARTNER */
 .col-50{
-    width: calc(50% - 10px);
+    width: calc(50% - 50px);
 }
 
 .content-50{
     height: 200px;
     background-color: rgb(70, 184, 242);
     border: 1px solid black;
+}
+
+/* CONTAINER LOGHI */
+.content-squares{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.square{
+    width: 50%;
+    height: calc(100vw / 6);
+}
+
+.acqua{
+    background-color: aqua;
+}
+
+.blu {
+    background-color: blue;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.green {
+    background-color: green;
 }
 
 /* DIV DOMANDE FREQUENTI */
