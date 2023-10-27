@@ -111,7 +111,7 @@ main{
     display: flex;
     height: 80%;
     flex-wrap: wrap;
-    padding: 80px 0 0 0px;
+    padding: 20px 0 0 0px;
     gap: 0 50px;
 }
 
@@ -166,20 +166,22 @@ h2{
 
 .content-full{
     height: 100px;
+    padding: 50px 0 10px 0;
 }
 
 .content-33{
     border: 1px solid lightgray;
     min-height: 1020px;
+    margin-top: 40px;
 }
 
-.content-33-title{
+.content-title{
     padding: 10px;
     text-align: center;
     border-bottom: 1px solid lightgray;
 }
 
-.content-33-central{
+.content-central{
     padding: 30px;
 }
 
@@ -207,16 +209,14 @@ span{
     padding-left: 10px;
 }
 
-.button-prova-gratis{
+.prova-gratis{
     padding: 10px 45px 10px 45px;
     font-size: 17px;
     margin: 25px 0 25px 0;
 }
 
-.button-contattaci{
+.contattaci{
     padding: 10px 95px 10px 95px;
-    font-size: 17px;
-    margin: 25px 0 25px 0;
 }
 
 .small-hr {
@@ -229,6 +229,28 @@ span{
     color:rgb(0, 97, 255);
     padding-top: 15px;
     font-weight: 900;
+}
+
+/* DIV ENTERPRICE */
+.content-enterprise{
+    border: 1px solid lightgray;
+    margin: 0 0 70px 0;
+    display: flex;
+}
+
+.content-team{
+    margin-top: 50px;
+    border: 1px solid lightgray;
+}
+
+.col-65{
+    width: calc(100% - 35%);
+}
+
+.col-35{
+    width: calc(100% - 70%);
+    text-align: end;
+    padding-top: 10px;
 }
 
 /* DIV PARTNER */
