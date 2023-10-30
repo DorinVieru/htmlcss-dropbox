@@ -21,6 +21,11 @@ body{
     padding: 20px 0;
 }
 
+a{
+    text-decoration: none;
+    color: black;
+}
+
 /* HEADER */
 header {
     background-color: white;
