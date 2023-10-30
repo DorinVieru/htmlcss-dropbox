@@ -69,7 +69,8 @@ main{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 10px 250px 0 250px;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 .content-jumbo-100{
@@ -95,7 +96,7 @@ main{
 }
 
 .img-jumbo{
-    width: 620px;
+    width: 100%;
     position: relative;
     top: 40px;
 }
@@ -127,52 +128,20 @@ h2{
     padding-bottom: 15px;
 }
 
-.checkbox input {
-    height: 0;
-    width: 0;
+label {
+    padding-left: 3px;
 }
 
-.checkbox {
-    position: relative;
-    user-select: none;
-    padding: 0 40px 0 20px;
-}
-
-.checkmark {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 20px;
-    width: 20px;
-    border: 1px solid #c9c9c9;
-    border-radius: 50%;
-}
-
-.checkbox input:checked~.checkmark {
-    background-color: #2196F3;
-}
-
-.checkmark:after {
-    content: "";
-    position: absolute;
-    top: 22%;
-    left: 0;
-    right: 0;
-    width: 10px;
-    height: 10px;
-    margin: 0 auto;
-    border-radius: 50%;
-    background: white;
+.radio {
+    margin-left: 10px;
 }
 
 /* DIV PRICE */
 .col-33{
     width: calc(100% / 3 - 50px);
-    margin-top: 40px;
 }
 
 .content-full{
-    height: 100px;
     padding: 50px 0 10px 0;
 }
 
@@ -223,7 +192,7 @@ span{
 }
 
 .contattaci{
-    padding: 10px 95px 10px 95px;
+    width: 100%;
 }
 
 .small-hr {
@@ -270,11 +239,7 @@ span{
 }
 
 .img-partner{
-    width: 650px;
-}
-
-.content-50-central{
-   padding: 70px 0 0 80px;
+    width: 100%;
 }
 
 .p-partner-operation{
@@ -305,35 +270,41 @@ span{
 }
 
 /* CONTAINER LOGHI */
-.content-squares{
+.content-squares {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+}
+
+.row-loghi {
+    padding: 0;
+    width: 100%;
+    display: flex;
     margin-top: 50px;
 }
 
-.row-loghi{
-    padding: 0;
+.col-square {
+    width: calc(100% / 3);
 }
 
-.square-33{
+.square-33 {
     background-color: lightgray;
-    margin-top: 90px;
-    width: calc(100% - 55%);
-    padding: 0 15px 0 15px;
+    width: calc(100% / 2);
+    padding: 20px 15px 0 15px;
+    overflow: scroll;
 }
 
-.square{
+.square {
     width: 50%;
     height: calc(100vw / 6);
     position: relative;
 }
 
-.img-designit{
+.img-designit {
     width: 200px;
 }
 
-.img-sponsor{
+.img-sponsor {
     width: 70%;
     position: absolute;
     top: 50%;
@@ -342,7 +313,7 @@ span{
     filter: invert(100%);
 }
 
-.green{
+.green {
     background-color: rgb(162, 211, 155);
     border: 10px solid rgb(209, 233, 205);
 }
@@ -371,17 +342,13 @@ span{
     background-color: rgb(255, 216, 48);
 }
 
-.p-mortesen{
+.p-mortesen {
     padding-top: 25px;
 }
 
 /* DIV PROVA GRATUITA */
 .col-100-prova-gratuita{
     padding: 70px 0 70px 0;
-}
-
-.row-prova-gratuita{
-    padding: 10px 150px 0 100px;
 }
 
 .h3-red{
@@ -442,10 +409,6 @@ footer{
     padding: 40px 0 60px 0;
     margin-top: 40px;
     width: 100%;
-}
-
-.row-footer{
-    padding: 10px 150px 0 100px;
 }
 
 .content-footer{
