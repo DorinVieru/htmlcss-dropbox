@@ -418,6 +418,19 @@ span{
     padding-left: 50px;
 }
 
+.hidden{
+    display: none;
+}
+
+.show{
+    display: block;
+}
+
+.reply:hover .hidden{
+    display: block;
+    padding-top: 25px;
+}
+
 /* FOOTER */
 .container-footer{
     background-color: black;
