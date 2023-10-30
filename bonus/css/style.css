@@ -1,0 +1,449 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* COMMON */
+.container-fluid {
+    margin: 0 10px;
+    width: calc(100% - 20px);
+}
+
+.row-fluid {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+/* HEADER */
+header {
+    background-color: white;
+    gap: 20px 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+ul{
+    list-style: none;
+}
+
+.li-header{
+    display: inline-block;
+    vertical-align: middle;
+    padding: 10px;
+}
+
+button{
+    background-color: rgb(0, 97, 255);
+    color: white;
+    padding: 7px 15px 7px 15px;
+    border: none;
+    margin-top: 2px;
+}
+
+/* MAIN */
+main{
+    padding-top: 90px;
+}
+
+/* CONTAINER JUMBOTRON */
+.container-jumbo{
+    max-width: 100%;
+    background-color: rgb(180, 208, 231);
+}
+
+.row-jumbo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px 250px 0 250px;
+}
+
+.content-jumbo-100{
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.content-jumbo-50{
+    margin-top: 40px;
+}
+
+.jumbo-button{
+    margin: 20px 5px 20px 5px;
+    font-size: 17px;
+}
+
+.col-100{
+    width: 96%;
+}
+
+.col-50-jumbo{
+    width: 50%;
+}
+
+.img-jumbo{
+    width: 620px;
+    position: relative;
+    top: 40px;
+}
+
+.fa-arrow-down{
+    font-size: 40px;
+    font-weight: 900;
+    margin-top: 40px;
+}
+
+/* CONTAINER CENTRALE */
+.container-full{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.row-full {
+    width: 100%;
+    display: flex;
+    height: 80%;
+    flex-wrap: wrap;
+    padding: 20px 0 80px 0px;
+    gap: 0 50px;
+    align-items: center;
+}
+
+h2{
+    font-size: 40px;
+    padding-bottom: 15px;
+}
+
+.checkbox input {
+    height: 0;
+    width: 0;
+}
+
+.checkbox {
+    position: relative;
+    user-select: none;
+    padding: 0 40px 0 20px;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #c9c9c9;
+    border-radius: 50%;
+}
+
+.checkbox input:checked~.checkmark {
+    background-color: #2196F3;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    top: 22%;
+    left: 0;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background: white;
+}
+
+/* DIV PRICE */
+.col-33{
+    width: calc(100% / 3 - 50px);
+    margin-top: 40px;
+}
+
+.content-full{
+    height: 100px;
+    padding: 50px 0 10px 0;
+}
+
+.content-33{
+    border: 1px solid lightgray;
+    min-height: 1020px;
+    margin-top: 40px;
+}
+
+.content-title{
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid lightgray;
+}
+
+.content-central{
+    padding: 30px;
+}
+
+h3{
+    font-size: 25px;
+}
+
+h6{
+    font-size: 18px;
+    padding: 10px 0 10px 0;
+}
+
+.p-gray{
+    color: gray;
+    padding-bottom: 20px;
+}
+
+.list-price{
+    display: flex;
+    align-items: baseline;
+    padding: 10px 10px 10px 0;
+}
+
+span{
+    padding-left: 10px;
+}
+
+.prova-gratis{
+    padding: 10px 45px 10px 45px;
+    font-size: 17px;
+    margin: 25px 0 25px 0;
+}
+
+.contattaci{
+    padding: 10px 95px 10px 95px;
+}
+
+.small-hr {
+    color: rgb(237, 235, 235);
+    width: 60px;
+    margin: 40px 0 40px 0;
+}
+
+.fa-check{
+    color:rgb(0, 97, 255);
+    padding-top: 15px;
+    font-weight: 900;
+}
+
+/* DIV ENTERPRICE */
+.content-enterprise{
+    border: 1px solid lightgray;
+    margin: 0 0 90px 0;
+    display: flex;
+}
+
+.content-team{
+    margin-top: 50px;
+    border: 1px solid lightgray;
+}
+
+.col-65{
+    width: calc(100% - 35%);
+}
+
+.col-35{
+    width: calc(100% - 70%);
+    text-align: end;
+    padding-top: 10px;
+}
+
+/* DIV PARTNER */
+.col-60{
+    width: calc(50% - 40px);
+}
+
+.col-40{
+    width: calc(50% - 60px);
+}
+
+.img-partner{
+    width: 650px;
+}
+
+.content-50-central{
+   padding: 70px 0 0 80px;
+}
+
+.p-partner-operation{
+    padding-top: 30px;
+}
+
+.button-partner{
+    margin-top: 40px;
+    background-color: white;
+    color: gray;
+    border: 2px solid gray;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* DIV OPERATION */
+
+.operation{
+    padding: 100px 0 50px 0;
+}
+
+.img-operation{
+    width: 250px;
+}
+
+.title-team{
+    padding-bottom: 45px;
+}
+
+/* CONTAINER LOGHI */
+.content-squares{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.row-loghi{
+    padding: 0;
+}
+
+.square-33{
+    background-color: lightgray;
+    margin-top: 90px;
+    width: calc(100% - 55%);
+    padding: 0 15px 0 15px;
+}
+
+.square{
+    width: 50%;
+    height: calc(100vw / 6);
+    position: relative;
+}
+
+.img-designit{
+    width: 200px;
+}
+
+.img-sponsor{
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: invert(100%);
+}
+
+.green{
+    background-color: rgb(162, 211, 155);
+    border: 10px solid rgb(209, 233, 205);
+}
+
+.black-red {
+    background-color: rgb(97, 8, 43);
+}
+
+.light-blue {
+    background-color: rgb(0, 147, 206);
+}
+
+.red {
+    background-color: red;
+}
+
+.celeste {
+    background-color: rgb(180, 208, 231);
+}
+
+.blu {
+    background-color: rgb(3, 3, 109);
+}
+
+.yellow {
+    background-color: rgb(255, 216, 48);
+}
+
+.p-mortesen{
+    padding-top: 25px;
+}
+
+/* DIV PROVA GRATUITA */
+.col-100-prova-gratuita{
+    padding: 70px 0 70px 0;
+}
+
+.row-prova-gratuita{
+    padding: 10px 150px 0 100px;
+}
+
+.h3-red{
+    color: rgb(141, 2, 2);
+    font-size: 35px;
+}
+
+.prova-gratuita{
+    background-color: white;
+    color: black;
+    margin-left: 150px;
+}
+
+.content-prova-gratuita{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* DIV DOMANDE FREQUENTI */
+.h3-question{
+    padding-bottom: 20px;
+}
+
+.hr-medium{
+    width: 73%;
+    margin: 25px 0 25px 0;
+}
+
+.content-question{
+    padding: 50px 0 50px 200px;
+}
+
+.fa-angle-down{
+    padding-left: 50px;
+}
+
+/* FOOTER */
+.container-footer{
+    background-color: black;
+}
+
+footer{
+    color: white;
+    background-color: black;
+    padding: 40px 0 60px 0;
+    margin-top: 40px;
+    width: 100%;
+}
+
+.row-footer{
+    padding: 10px 150px 0 100px;
+}
+
+.content-footer{
+    display: flex;
+    justify-content: space-around;
+}
+
+h4{
+    padding: 5px 0 20px 0;
+}
+
+.li-footer{
+    padding-top: 10px;
+}
+
+.fa-caret-up{
+    padding-left: 7px;
+    text-align: center;
+}
